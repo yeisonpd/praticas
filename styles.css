@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    background-color: #ff4;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablero{
+    width: 310px;
+    height: 310px;
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+.tablero > div{
+    border: solid 1px #000;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablero > div{
+    margin-right: 2px;
+}
+
+.x{
+    font-size: 50px;
+    font-weight: bold;
+    color: #00f;
+}
+
+.o{
+    font-size: 50px;
+    font-weight: bold;
+    color: #f00;
+}
