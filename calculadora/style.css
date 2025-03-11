@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal__conte{
+    width: 350px;
+    height: 500px;
+    border: 1px solid #000;
+    border-radius:10px ;
+    background-color: #3ef; 
+}
+
+.cal__header{
+    width: 90%;
+    height: 80px;
+    margin:  5px auto;
+}
+
+.cal__input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 30px;
+    border: 0;
+    outline: none;
+}
+
+.cal__body{
+    margin: 5px auto;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cal__body > input{
+    display: inline-block;
+    margin: 5px auto;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+}

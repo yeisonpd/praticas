@@ -1,5 +1,17 @@
 const tablero = document.getElementById('tablero');
 
+async function obtenerProductos() {
+    try {
+        const respuesta = await fetch('http://localhost:3000/productos'); // Realiza la solicitud
+        const productos = await respuesta.json(); // Procesa el JSON de la respuesta
+        console.log(productos); // Muestra los productos en la consola
+    } catch (error) {
+        console.error('Error al obtener los productos:', error);
+    }
+}
+
+obtenerProductos(); // Llamar a la función 
+
 let contenido = tablero.children
 
 let i = 1 //variable de control
